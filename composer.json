@@ -1,0 +1,17 @@
+{
+    "name": "adam/form",
+    "description": "Criacao de formulario",
+    "autoload": {
+        "psr-4": {
+            "Adam\\Lib\\": "Lib/",
+            "Adam\\App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ADAM",
+            "email": "adamrpdiass@hotmail.com"
+        }
+    ],
+    "require": {}
+}
