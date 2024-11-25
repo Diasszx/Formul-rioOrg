@@ -14,7 +14,7 @@ class Connection{
         }
 
         $user = isset($db['user']) ? $db['user'] : null;
-        $password = isset($db['pass']) ? $db['pass'] : null;
+        $pass = isset($db['pass']) ? $db['pass'] : null;
         $name = isset($db['name']) ? $db['name'] : null;
         $host = isset($db['host']) ? $db['host'] : null;
         $type = isset($db['type']) ? $db['type'] : null;
