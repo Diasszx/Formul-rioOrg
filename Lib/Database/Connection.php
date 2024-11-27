@@ -1,4 +1,9 @@
 <?php
+
+namespace Livro\Database;
+use Exception;
+use PDO;
+
 class Connection{
     private function __construct(){}
 

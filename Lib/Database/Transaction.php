@@ -1,5 +1,5 @@
 <?php
-
+namespace Livro\Database;
 class Transaction{
     private static $conn;
     private static $logger;

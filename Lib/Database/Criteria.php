@@ -1,11 +1,14 @@
- <?php
+<?php
+namespace Livro\Database;
 
  class Criteria
  {
     private $filters;
+    private $properties;
     public function __construct()
     {
         $this->filters = [];
+        $this->properties = [];
     }
 
     public function add($variable, $compare, $value, $logic_op = 'and')
@@ -56,6 +59,19 @@
             }
             $result = trim($result);
             return "({$result})";
+        }
+    }
+
+    public function setProperty($property,$value)
+    {
+        $this->properties[$property] = $value;
+    }
+
+    public function getProperty($property)
+    {
+        if (isset($this->properties[$property]))
+        {
+            return $this->properties[$property];
         }
     }
  }

@@ -1,4 +1,5 @@
 <?php
+namespace Livro\Database;
 
 abstract class Record
 {
@@ -148,7 +149,7 @@ abstract class Record
             return $row[0];
         }
         else
-        {
+        { 
             throw new Exception('Não há transação ativa');
         }
     }
