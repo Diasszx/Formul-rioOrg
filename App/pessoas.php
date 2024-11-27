@@ -10,3 +10,6 @@ $al = new Livro\Core\AppLoader;
 $al->addDirectory('App/Control');
 $al->addDirectory('App/Model');
 $al->register('App/Model');
+
+$pagina = new PessoaControl;
+$pagina->show($_GET);
