@@ -13,3 +13,14 @@ $al->register();
 
 $pagina = new PessoaControl;
 $pagina->show($_GET);
+
+if($_GET)
+{
+    $class = $_GET['class'];
+
+    if(class_exists($class))
+    {
+        $pagina = new $class;
+        $pagina->show();
+    }
+}
